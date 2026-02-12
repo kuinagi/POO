@@ -6,3 +6,5 @@
 
  ## Aulas
  - [Aula 01](../POO/aula-01/) - Introdução à linguagem Java.
+
+ [![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)
