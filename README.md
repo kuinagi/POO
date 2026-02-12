@@ -1,2 +1,2 @@
 # POO
-Para as aulas de Programação Orientada a Objetos.
+Atividades práticas da disciplina de Programação Orientada a Objetos. 
