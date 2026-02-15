@@ -17,5 +17,15 @@ Um Personal Access Token, ou PAT, é como uma senha para dar um push de forma ma
 4. Clique em Generate New Token
 5. Ao gerar o Token, marque a permissão 'repo'
 ### Salvar em cache as credenciais do PAT
+Pode ser incoveniente ter que digitar o PAT toda vez que for se autenticar, por ser um grande token, por isso, é possível usar o credential helper do git.
+``` bash
+# Irá armazenar as credenciais na memória por 15 minutos
+git config −−global credential.helper cache
+
+# Caso queira armazenar por mais tempo, use (irá armazenar por 1 hora)
+git config −−global credential.helper 'cache −−timeout=3600'
+```
+
 
 ## Qual a diferença entre git merge e git rebase?
+A principal diferença é que o git merge junta branches preservando o histórico original e criando um novo commit de fusão, resultando em uma estrutura ramificada (melhor uso em branches compartilhadas). O git rebase reescreve o histórico, movendo os commits da sua branch para o topo da branch principal, criando um histórico linear e limpo (melhor uso em branches locais/privadas).
